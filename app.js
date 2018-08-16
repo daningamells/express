@@ -23,6 +23,17 @@ res.render('card', {prompt: 'la la la', hint: 'la la la', colors: colors});
 
 });
 
+app.get('/hello', (req, res) => {
+res.render('hello');
+
+});
+
+app.post('/hello', (req, res) => {
+console.dir(req);
+res.render('hello');
+
+});
+
 app.listen(3000, () => {
 console.log('the application is running3');
 
